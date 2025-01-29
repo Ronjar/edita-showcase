@@ -3,7 +3,6 @@ title: Privacy policy # Name for SEO
 description: The privacy policy for my Website Casey # Description for SEO
 date: '2023-4-14' # Edit date for SEO
 published: true # is this page accessible at all
-header: true # show this page in header menu
 footer: true # show this page in footer menu
 ---
 
