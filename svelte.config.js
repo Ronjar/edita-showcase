@@ -25,7 +25,14 @@ const config = {
 		// adapter: adapter()
 		adapter: adapter({
 			fallback: 'index.html' // may differ from host to host
-		})
+		}),
+		prerender: {
+			entries: [
+				"*",
+				"/sites/*",
+				"/sites/",
+			],
+		},
 	}
 };
 

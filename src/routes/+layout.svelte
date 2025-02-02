@@ -2,6 +2,8 @@
     import "../app.css";
     import { app, company } from "$lib/config";
     import { _getHeaderSites, _getFooterSites } from "./api/sites/+server";
+    
+    import image from "../site/img/logo.png?enhanced";
 
     //import { env } from "$env/dynamic/public";
 
@@ -25,8 +27,8 @@
     <header class="navbar bg-base-100 flex justify-between sticky top-0 z-20 shadow-lg">
         <a href="/" class="btn btn-ghost rounded-2xl m-2 text-xl flex items-center">
             {#if app.general.logo_image}
-                <img
-                    src={app.general.logo_image}
+                <enhanced:img
+                    src={image}
                     alt={app.general.name}
                     class="h-8 w-8 mr-2 rounded-box"
                 />
