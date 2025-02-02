@@ -2,8 +2,6 @@
     import Feature from "$lib/components/Feature.svelte";
     import StoreLinks from "$lib/components/StoreLinks.svelte";
     import { app } from "$lib/config";
-
-    import { _getMainSites } from "./api/sites/+server";
     import image from "../site/img/main.png?enhanced";
 
     import Icon from "@iconify/svelte";

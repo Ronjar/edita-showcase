@@ -3,6 +3,10 @@ import type { License } from '$lib/types/license';
 import fs from 'fs/promises';
 import path from 'path';
 
+
+
+export const prerender = true;
+
 // Globale Variable, um die Lizenzen einmalig zu speichern.
 // Wenn "null", ist noch nicht geladen.
 let cachedLicenses: License[] | null = null;

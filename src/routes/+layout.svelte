@@ -1,7 +1,7 @@
 <script lang="ts">
     import "../app.css";
     import { app, company } from "$lib/config";
-    import { _getHeaderSites, _getFooterSites } from "./api/sites/+server";
+    import { getHeaderSites, getFooterSites } from "$lib/fetchSites";
     
     import image from "../site/img/logo.png?enhanced";
 
@@ -15,8 +15,8 @@
     //let qrModal: HTMLDialogElement;
     //let url = env.PUBLIC_BASE_URL;
 
-    let headerSites = _getHeaderSites();
-    let footerSites = _getFooterSites();
+    let headerSites = getHeaderSites();
+    let footerSites = getFooterSites();
 
     //function showQR() {
     //    qrModal.showModal();
