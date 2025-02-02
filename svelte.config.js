@@ -24,11 +24,6 @@ const config = {
 		// defaultAdapter:
 		// adapter: adapter()
 		adapter: adapter(),
-		prerender: {
-			entries: [
-				"*",
-			],
-		},
 	}
 };
 
